@@ -1,0 +1,155 @@
+/* RESET Y BASE DARK */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body.nike-dark-theme { background-color: #000; color: #fff; font-family: 'Arial', sans-serif; line-height: 1.6; }
+
+.container { max-width: 1200px; margin: 0 auto; width: 90%; }
+
+/* HEADER */
+.header-main { background: #000; border-bottom: 1px solid #222; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+.header-flex { display: flex; justify-content: space-between; align-items: center; }
+.logo-text { font-size: 20px; font-weight: bold; letter-spacing: 1px; }
+.logo-sub { color: #ff9900; font-size: 11px; display: block; text-transform: uppercase; }
+.nav a { color: #fff; text-decoration: none; margin-left: 20px; font-size: 14px; transition: 0.3s; font-weight: 500; }
+.nav a.active, .nav a:hover { color: #ff9900; }
+
+/* LAYOUT CONTACTO */
+.contact-container { max-width: 1000px; margin: 40px auto; padding: 20px; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; background: #0a0a0a; border: 1px solid #222; border-radius: 20px; overflow: hidden; margin-bottom: 50px; }
+
+/* INFO IZQUIERDA */
+.contact-info { padding: 40px; background: #111; border-right: 1px solid #222; }
+.contact-info h2 { font-size: 32px; margin-bottom: 20px; color: #ff9900; text-transform: uppercase; }
+.subtitle { color: #888; margin-bottom: 30px; }
+.info-item { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; color: #ccc; }
+.info-item i { color: #ff9900; font-size: 18px; width: 25px; }
+
+/* FORMULARIO COMÚN */
+.contact-form-box { padding: 40px; background: #0a0a0a; min-height: 450px; }
+.input-group { margin-bottom: 15px; }
+.input-group label { display: block; font-size: 12px; color: #ff9900; margin-bottom: 6px; font-weight: bold; text-transform: uppercase; }
+.input-group input, .input-group select, .input-group textarea {
+    width: 100%; padding: 12px; background: #000; border: 1px solid #333; color: #fff; border-radius: 8px; outline: none; transition: 0.3s;
+}
+.input-group input:focus, .input-group textarea:focus { border-color: #ff9900; box-shadow: 0 0 8px rgba(255, 153, 0, 0.2); }
+
+/* BOTONES */
+.btn-send, .btn-seller {
+    width: 100%; padding: 15px; border: none; border-radius: 30px; font-weight: bold; font-size: 14px; cursor: pointer; transition: 0.3s; text-transform: uppercase; margin-top: 10px;
+}
+.btn-send { background: #ff9900; color: #000; }
+.btn-send:hover { background: #fff; transform: translateY(-3px); }
+
+/* CAJITA DE VENDEDOR (LA SOLICITUD) */
+.seller-section { display: flex; justify-content: center; margin-top: 20px; }
+.seller-card { 
+    background: #0a0a0a; border: 1px solid #222; padding: 40px; border-radius: 25px; max-width: 600px; width: 100%; 
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8); transition: 0.4s; position: relative;
+}
+.seller-card:hover { border-color: #ff9900; box-shadow: 0 0 30px rgba(255, 153, 0, 0.15); transform: translateY(-5px); }
+
+.seller-header { text-align: center; margin-bottom: 25px; }
+.seller-icon { font-size: 40px; color: #ff9900; margin-bottom: 10px; }
+.seller-header h3 { font-size: 24px; color: #fff; margin-bottom: 5px; }
+.seller-header p { color: #666; font-size: 14px; }
+
+.input-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.btn-seller { background: #fff; color: #000; }
+.btn-seller:hover { background: #ff9900; color: #fff; }
+
+/* ESTILOS DE GRACIAS */
+.hidden-thanks { display: none; text-align: center; animation: fadeIn 0.6s forwards; }
+.thanks-icon { font-size: 60px; color: #ff9900; margin-bottom: 20px; }
+.team-signature { margin-top: 25px; background: #161616; padding: 20px; border-radius: 10px; border-left: 4px solid #ff9900; text-align: left; }
+.team-signature span { font-size: 11px; color: #ff9900; font-weight: bold; }
+.team-signature p { font-size: 14px; margin-top: 5px; color: #fff; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+.footer-simple { text-align: center; padding: 60px 40px; color: #444; font-size: 12px; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .input-row { grid-template-columns: 1fr; }
+}
+
+/* HAMBURGUESA */
+
+.menu-btn{
+
+display:none;
+flex-direction:column;
+cursor:pointer;
+
+}
+
+.menu-btn span{
+
+width:25px;
+height:3px;
+background:#fff;
+margin:4px 0;
+transition:0.3s;
+
+}
+
+
+/* ANIMACION X */
+
+.menu-btn.open span:nth-child(1){
+
+transform:rotate(45deg) translate(5px,5px);
+
+}
+
+.menu-btn.open span:nth-child(2){
+
+opacity:0;
+
+}
+
+.menu-btn.open span:nth-child(3){
+
+transform:rotate(-45deg) translate(6px,-6px);
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.nav{
+
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#000;
+flex-direction:column;
+display:none;
+text-align:center;
+padding:20px 0;
+
+}
+
+.nav a{
+
+display:block;
+margin:15px 0;
+
+}
+
+.nav.active{
+
+display:flex;
+
+}
+
+.menu-btn{
+
+display:flex;
+
+}
+
+}

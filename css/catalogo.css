@@ -1,0 +1,96 @@
+/* --- Base Dark --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body.dark-theme { background-color: #000000; color: #ffffff; font-family: 'Helvetica Neue', Arial, sans-serif; }
+
+/* --- Header Estilo Nike --- */
+.header-nike { background: #000; padding: 15px 0; border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 100; }
+.header-container { width: 90%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+.logo-text { color: #fff; font-size: 20px; font-weight: bold; }
+.logo-sub { color: #ff9900; font-size: 10px; font-weight: bold; margin-top: -5px; }
+.nav-links a { color: #fff; text-decoration: none; margin-left: 20px; font-size: 14px; transition: 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: #ff9900; }
+
+
+/* --- Cuerpo del Catálogo --- */
+.container-catalog { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+.catalog-header { display: flex; align-items: center; margin-bottom: 40px; }
+.orange-line { width: 5px; height: 35px; background: #ff9900; margin-right: 15px; border-radius: 2px; }
+.catalog-title { font-size: 32px; font-weight: 800; letter-spacing: -1px; }
+
+/* --- Grilla de Productos --- */
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+
+.product-card-dark { 
+    background: #111; 
+    border-radius: 20px; 
+    padding: 25px; 
+    position: relative; 
+    border: 1px solid #222; 
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+.product-card-dark:hover { border-color: #ff9900; transform: translateY(-10px); box-shadow: 0 15px 40px rgba(255,153,0,0.15); }
+
+.img-wrapper { height: 280px; overflow: hidden; border-radius: 12px; margin-bottom: 20px; }
+.img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+.product-card-dark:hover img { transform: scale(1.1); }
+
+/* --- Amazon Vibe --- */
+.badge { position: absolute; top: 35px; left: 35px; background: #ff9900; color: #000; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 800; z-index: 10; }
+.amazon-stars { color: #ffa41c; margin-bottom: 10px; font-size: 13px; }
+.amazon-stars span { color: #007185; margin-left: 8px; }
+.price { font-size: 30px; font-weight: bold; margin-bottom: 20px; }
+.price sup { font-size: 16px; margin-right: 2px; }
+
+.btn-amazon-dark { 
+    display: block; 
+    background: #ff9900; 
+    color: #000; 
+    text-align: center; 
+    padding: 12px; 
+    text-decoration: none; 
+    border-radius: 25px; 
+    font-weight: bold; 
+    font-size: 14px; 
+    transition: 0.3s; 
+}
+.btn-amazon-dark:hover { background: #fff; transform: scale(1.02); }
+
+/* BOTON HAMBURGUESA */
+
+.menu-btn{
+display:none;
+background:none;
+border:none;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+.nav-links{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#000;
+padding:20px;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.nav-links a{
+margin:10px 0;
+}
+
+}

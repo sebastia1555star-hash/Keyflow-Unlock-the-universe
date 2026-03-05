@@ -1,0 +1,126 @@
+/* RESET Y COLORES NIKE DARK */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body.nike-dark-theme { background-color: #000; color: #fff; font-family: 'Arial', sans-serif; }
+
+.container { max-width: 1200px; margin: 0 auto; width: 95%; }
+
+/* HEADER NIKE */
+.header-main { background: #000; border-bottom: 1px solid #222; padding: 15px 0; }
+.header-flex { display: flex; justify-content: space-between; align-items: center; }
+.logo-text { display: block; font-size: 20px; font-weight: bold; color: #fff; }
+.logo-sub { color: #ff9900; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+.nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: 500; font-size: 14px; transition: 0.3s; }
+.nav a:hover { color: #ff9900; }
+
+/* LAYOUT */
+.product-container { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 20px; }
+
+/* CARRUSEL */
+.carousel { position: relative; width: 100%; border-radius: 12px; overflow: hidden; background: #111; border: 1px solid #333; height: 500px; }
+.slides { display: flex; transition: transform 0.5s ease-in-out; height: 100%; }
+.slides img { width: 100%; height: 100%; object-fit: contain; flex-shrink: 0; }
+.arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px; cursor: pointer; border-radius: 50%; z-index: 10; }
+.arrow:hover { background: #ff9900; color: #000; }
+.next { right: 15px; } .prev { left: 15px; }
+
+/* INFO */
+.title { font-size: 28px; font-weight: bold; margin-bottom: 8px; }
+.orange { color: #ff9900; }
+.stars { color: #ffa41c; font-size: 14px; margin: 10px 0; }
+.price { font-size: 32px; color: #fff; margin-bottom: 5px; }
+.status { color: #00a82d; font-weight: bold; margin-bottom: 20px; }
+
+/* INFO Y COMPRA */
+.title { font-size: 28px; font-weight: bold; margin-bottom: 8px; }
+.orange { color: #ff9900; }
+.stars { color: #ffa41c; font-size: 14px; margin: 10px 0; }
+.reviews { color: #007185; margin-left: 10px; }
+.divider { border: 0; border-top: 1px solid #222; margin: 15px 0; }
+.price { font-size: 32px; color: #fff; margin-bottom: 5px; }
+.status { color: #00a82d; font-weight: bold; margin-bottom: 20px; }
+
+
+/* CAJA DE COMPRA */
+.buy-box { border: 1px solid #333; padding: 20px; border-radius: 12px; background: #111; }
+.row { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
+#qty { background: #000; color: #fff; border: 1px solid #444; padding: 5px; border-radius: 5px; }
+
+/* BOTONES ESTILO NIKE/AMAZON */
+.btn { 
+    display: block; 
+    width: 100%; 
+    padding: 12px; 
+    border-radius: 25px; 
+    text-decoration: none !important; 
+    text-align: center; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    border: none; 
+    cursor: pointer; 
+    transition: 0.2s; 
+}
+
+.btn-cart { background: #ffd814; color: #000 !important; }
+
+/* EL BOTÓN NARANJA ACTUALIZADO */
+.btn-orange {
+    background: #ffa41c !important;
+    color: #000 !important;
+    padding: 14px !important;
+    border: 1px solid #a88734 !important;
+    display: block !important;
+}
+
+.btn:hover { opacity: 0.9; transform: scale(1.01); }
+
+/* TOAST */
+.toast { position: fixed; bottom: 30px; right: 30px; background: #111; color: #fff; border: 1px solid #ff9900; padding: 15px 25px; border-radius: 8px; z-index: 1000; animation: slideUp 0.4s; }
+@keyframes slideUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+.specs { margin-top: 25px; }
+.specs ul { padding-left: 20px; color: #ccc; line-height: 1.6; }
+
+/* MENU HAMBURGUESA */
+
+.menu-btn{
+display:none;
+flex-direction:column;
+cursor:pointer;
+}
+
+.menu-btn span{
+width:25px;
+height:3px;
+background:#fff;
+margin:4px 0;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.nav{
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#000;
+flex-direction:column;
+text-align:center;
+padding:20px;
+display:none;
+}
+
+.nav.active{
+display:flex;
+}
+
+.nav a{
+margin:10px 0;
+}
+
+.menu-btn{
+display:flex;
+}
+
+}
