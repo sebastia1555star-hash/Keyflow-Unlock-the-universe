@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contacto - Mi Minisitio</title>
+
+<link rel="stylesheet" href="css/contacto.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body class="nike-dark-theme">
+
+<header class="header-main">
+
+<div class="container header-flex">
+
+<div class="logo">
+<span class="logo-text">Mi Minisitio</span>
+<span class="logo-sub">Informática & Emprendimiento</span>
+</div>
+
+<nav class="nav" id="navMenu">
+<a href="index.html">Inicio</a>
+<a href="catalogo.html">Catálogo</a>
+<a href="servicio.html">Servicios</a>
+<a href="nosotros.html">Nosotros</a>
+<a href="contacto.html" class="active">Contacto</a>
+</nav>
+
+<div class="menu-btn" id="menuBtn">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</div>
+
+</header>
+
+
+<main class="contact-container">
+
+<div class="contact-grid">
+
+<div class="contact-info">
+
+<h2>Contáctanos</h2>
+
+<p class="subtitle">
+¿Tienes dudas sobre nuestros llaveros 3D o necesitas un pedido?
+</p>
+
+<div class="info-item">
+<i class="fas fa-envelope"></i>
+<span>sebastia1555star@gmail.com</span>
+</div>
+
+<div class="info-item">
+<i class="fas fa-map-marker-alt"></i>
+<span>Unidad Educativa "Gonzalo Escudero"</span>
+</div>
+
+<div class="info-item">
+<i class="fas fa-users"></i>
+<span>2do Informática "B"</span>
+</div>
+
+</div>
+
+
+<div class="contact-form-box">
+
+<div id="formContainer">
+
+<form id="orderForm">
+
+<div class="input-group">
+<label>Nombre completo</label>
+<input type="text" id="nombreWA" required>
+</div>
+
+<div class="input-group">
+<label>Correo electrónico</label>
+<input type="email" id="emailWA" required>
+</div>
+
+<div class="input-group">
+<label>Producto</label>
+
+<select id="productSelect">
+
+<option value="Llavero Langosta">Llavero Langosta</option>
+<option value="Llavero Ardilla">Llavero Ardilla</option>
+<option value="Pedido Personalizado">Otro / Personalizado</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+<label>Mensaje</label>
+<textarea id="mensajeWA" rows="4" required></textarea>
+</div>
+
+<button type="submit" class="btn-send">
+Enviar pedido
+</button>
+
+</form>
+
+</div>
+
+
+<div id="thanksMessage" class="hidden-thanks">
+
+<i class="fas fa-check-circle thanks-icon"></i>
+
+<h2>¡PEDIDO RECIBIDO!</h2>
+
+<p>Gracias por confiar en nuestro curso.</p>
+
+<div class="team-signature">
+
+<span>ATENTAMENTE</span>
+
+<p>Leonardo, Thierry, Sergio, Kevin y Mateo</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="seller-section">
+
+<div class="seller-card">
+
+<div class="seller-header">
+
+<i class="fas fa-store-alt seller-icon"></i>
+
+<h3>¿Quieres vender tu producto?</h3>
+
+<p>Envía los datos y lo publicaremos.</p>
+
+</div>
+
+
+<form id="uploadProductForm">
+
+<div class="input-group">
+<label>Nombre</label>
+<input type="text" id="vendedorNombre" required>
+</div>
+
+
+<div class="input-row">
+
+<div class="input-group">
+<label>Producto</label>
+<input type="text" id="vendedorProducto" required>
+</div>
+
+<div class="input-group">
+<label>Precio</label>
+<input type="number" id="vendedorPrecio" step="0.01" required>
+</div>
+
+</div>
+
+
+<div class="input-group">
+<label>Descripción</label>
+<textarea id="vendedorDesc" rows="3" required></textarea>
+</div>
+
+<button type="submit" class="btn-seller">
+
+<i class="fas fa-rocket"></i>
+
+Solicitar publicación
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</main>
+
+
+<footer class="footer-simple">
+
+<p>
+© 2026 Equipo de Gestión de Ventas
+</p>
+
+</footer>
+
+
+<script src="js/index.js"></script>
+<script src="js/contacto.js"></script>
+
+</body>
+</html>

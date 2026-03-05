@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ardilla 3D - Edición Especial</title>
+
+<link rel="stylesheet" href="css/producto2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body class="nike-dark-theme">
+
+<header class="header-main">
+
+<div class="container header-flex">
+
+<div class="logo">
+<span class="logo-text">Mi Minisitio</span>
+<span class="logo-sub">Informatica & Emprendimiento</span>
+</div>
+
+<nav class="nav" id="navMenu">
+<a href="index.html">Inicio</a>
+<a href="catalogo.html">Catálogo</a>
+<a href="contacto.html">Contacto</a>
+</nav>
+
+<div class="menu-btn" id="menuBtn">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</div>
+
+</header>
+
+<main class="product-container">
+
+<div class="product-visuals">
+
+<div class="carousel">
+
+<div class="slides" id="slider">
+
+<img src="img/IMG_20260111_173117.jpg" alt="Ardilla 1">
+<img src="img/IMG_20260111_173221.jpg" alt="Ardilla 2">
+<img src="img/IMG_20260111_173745.jpg" alt="Ardilla 3">
+
+</div>
+
+<button class="arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+<button class="arrow next" onclick="moveSlide(1)">&#10095;</button>
+
+</div>
+
+</div>
+
+<div class="product-info">
+
+<h1 class="title">Llavero de Ardilla 3D Articulada</h1>
+
+<p class="brand">
+Marca: <span class="orange">3DCREATOR - Gestión Escolar</span>
+</p>
+
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span class="reviews">(8 valoraciones)</span>
+</div>
+
+<hr class="divider">
+
+<p class="price">$1,50</p>
+
+<p class="status">Disponible</p>
+
+<div class="buy-box">
+
+<div class="row">
+<span>Cantidad:</span>
+
+<select id="qty">
+<option value="1">1 unidad</option>
+<option value="2">2 unidades</option>
+<option value="3">3 unidades</option>
+</select>
+</div>
+
+<button class="btn btn-cart" id="addToCart">
+Añadir a la cesta
+</button>
+
+<a href="contacto.html?producto=ardilla" class="btn btn-orange">
+Comprar ya
+</a>
+
+<p class="secure-note">
+<i class="fas fa-lock"></i> Transacción segura
+</p>
+
+</div>
+
+<div class="specs">
+
+<h3>Características:</h3>
+
+<ul>
+<li>Impresión 3D de alta precisión con materiales ecológicos.</li>
+<li>Extremidades y cola con movimiento articulado.</li>
+<li>Tamaño ideal para colgar en llaves o maletas.</li>
+</ul>
+
+</div>
+
+</div>
+
+</main>
+
+<script src="js/index.js"></script>
+<script src="js/producto2.js"></script>
+
+</body>
+</html>
